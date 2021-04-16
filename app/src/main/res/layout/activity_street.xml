@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/streetOption"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".street">
+
+    <TextView
+        android:id="@+id/titleStreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assistance Needed"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+    <TextView
+        android:id="@+id/paragraphStreet"
+        android:layout_width="680dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="25dp"
+        android:text="Pressing yourself against the window you squint through the grime to see if anyone is passing in the street who could help.
+        \nUnfortunately outside is turning to dusk, and with the shop already situated on a quiet alley you see no one who can come to your aid.
+        \nWhat do you do next?"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@+id/titleStreet"
+        app:layout_constraintTop_toBottomOf="@+id/titleStreet" />
+
+    <TextView
+        android:id="@+id/optionWindow_street"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:text="Throw something at the windows"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@id/paragraphStreet"
+        app:layout_constraintTop_toBottomOf="@+id/paragraphStreet" />
+
+    <TextView
+        android:id="@+id/optionPhone_street"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Use your phone to call for help"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/optionWindow_street"
+        app:layout_constraintTop_toBottomOf="@+id/optionWindow_street"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/optionShop_street"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Might as well explore the shop..."
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/optionPhone_street"
+        app:layout_constraintTop_toBottomOf="@+id/optionPhone_street"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

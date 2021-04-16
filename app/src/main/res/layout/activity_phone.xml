@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/phoneOption"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".phone">
+
+    <TextView
+        android:id="@+id/titlePhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Digital Age"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <TextView
+        android:id="@+id/paragraphPhone"
+        android:layout_width="673dp"
+        android:layout_height="163dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:text="Pulling out your phone you realise the battery has died.
+        \nThis is more devastating then being locked in a, seemingly, empty shop.
+        \nCursing at Candy Crush for being so addictive you look around to see if the shop has a phone you can use, but it doesn’t look like it.
+        \nWhat do you do next?"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@+id/titlePhone"
+        app:layout_constraintTop_toBottomOf="@+id/titlePhone" />
+
+    <TextView
+        android:id="@+id/optionWindow_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Throw something at the windows"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@id/paragraphPhone"
+        app:layout_constraintTop_toBottomOf="@+id/paragraphPhone" />
+
+    <TextView
+        android:id="@+id/optionStreet_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Try and attract attention from someone passing in the street"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/optionWindow_phone"
+        app:layout_constraintTop_toBottomOf="@+id/optionWindow_phone"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/optionShop_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Might as well explore the shop..."
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/optionStreet_phone"
+        app:layout_constraintTop_toBottomOf="@+id/optionStreet_phone"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

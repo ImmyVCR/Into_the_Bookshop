@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/firstMap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".openingMap">
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/locked_in"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <TextView
+        android:id="@+id/paragraph2"
+        android:layout_width="594dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="26dp"
+        android:text="You turn to leave, but realise the door has locked behind you.
+        \nYou push and pull, rattle and shake, but the door holds firm.
+        \nWhat do you do next?"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@+id/title2"
+        app:layout_constraintTop_toBottomOf="@+id/title2" />
+
+    <TextView
+        android:id="@+id/windows"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:text="Throw something at the windows"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@+id/paragraph2"
+        app:layout_constraintTop_toBottomOf="@+id/paragraph2" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Use your phone to call for help"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@+id/windows"
+        app:layout_constraintTop_toBottomOf="@+id/windows" />
+
+    <TextView
+        android:id="@+id/street"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Try and attract attention from someone passing in the street"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/phone"
+        app:layout_constraintTop_toBottomOf="@+id/phone"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

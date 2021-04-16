@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    android:visibility="visible"
+    tools:context=".counter">
+
+    <TextView
+        android:id="@+id/titleCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Counter"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+    <ImageView
+        android:id="@+id/counterImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleCounter"
+        app:srcCompat="@drawable/counter" />
+
+    <TextView
+        android:id="@+id/backToShop_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Shop"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+    <ImageView
+        android:id="@+id/torch_Counter"
+        android:layout_width="129dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="447dp"
+        android:clickable="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/counterImage"
+        app:layout_constraintEnd_toEndOf="@+id/counterImage"
+        app:layout_constraintStart_toStartOf="@+id/counterImage"
+        app:layout_constraintTop_toTopOf="@+id/counterImage"
+        app:srcCompat="@drawable/torch" />
+
+    <TextView
+        android:id="@+id/torchText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="44dp"
+        android:text="You collected a Torch"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/torch_Counter"
+        app:layout_constraintEnd_toEndOf="@+id/torch_Counter"
+        app:layout_constraintStart_toStartOf="@+id/torch_Counter"
+        app:layout_constraintTop_toTopOf="@+id/torch_Counter" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="139dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="448dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/counterImage"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/counterImage"
+        app:layout_constraintTop_toTopOf="@+id/counterImage"
+        app:srcCompat="@drawable/page" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

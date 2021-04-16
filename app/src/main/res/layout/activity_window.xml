@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/windowOption"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".window">
+
+    <TextView
+        android:id="@+id/titleWindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heave Ho"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.100000024" />
+
+    <TextView
+        android:id="@+id/paragraphWindow"
+        android:layout_width="648dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:text="Looking around you spy a heavy looking lion shaped doorstop.
+        \nAfter struggling to lift it, you throw the doorstop at the windows in an attempt to break free.
+        \nThe glass somehow holds, and although you haven’t escaped the shop, you have escaped the vandalism charges.
+        \nWhat do you do next?"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@+id/titleWindow"
+        app:layout_constraintTop_toBottomOf="@+id/titleWindow" />
+
+    <TextView
+        android:id="@+id/optionPhone_window"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Use your phone to call for help"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@id/paragraphWindow"
+        app:layout_constraintTop_toBottomOf="@+id/paragraphWindow" />
+
+    <TextView
+        android:id="@+id/optionStreet_window"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Try and attract attention from someone passing in the street"
+        android:textColor="#000000"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/optionPhone_window"
+        app:layout_constraintTop_toBottomOf="@+id/optionPhone_window"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/optionShop_window"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Might as well explore the shop..."
+        android:textColor="#000000"
+        android:textSize="23sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/optionStreet_window"
+        app:layout_constraintTop_toBottomOf="@+id/optionStreet_window"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

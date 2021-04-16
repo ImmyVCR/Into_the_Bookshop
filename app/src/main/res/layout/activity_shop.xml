@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background"
+    tools:context=".shop">
+
+    <TextView
+        android:id="@+id/titleShop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Shop"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.120000005" />
+
+    <ImageView
+        android:id="@+id/shopMap"
+        android:layout_width="414dp"
+        android:layout_height="329dp"
+        android:cropToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.725"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/titleShop"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/map" />
+
+    <ImageView
+        android:id="@+id/bookshelves"
+        android:layout_width="119dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="209dp"
+        android:layout_marginBottom="225dp"
+        app:layout_constraintBottom_toBottomOf="@+id/shopMap"
+        app:layout_constraintEnd_toEndOf="@+id/shopMap"
+        app:layout_constraintStart_toStartOf="@+id/shopMap"
+        app:layout_constraintTop_toTopOf="@+id/shopMap"
+        app:srcCompat="@drawable/booksmol" />
+
+    <ImageView
+        android:id="@+id/display"
+        android:layout_width="119dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="223dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/shopMap"
+        app:layout_constraintEnd_toEndOf="@+id/shopMap"
+        app:layout_constraintStart_toStartOf="@+id/shopMap"
+        app:layout_constraintTop_toTopOf="@+id/shopMap"
+        app:srcCompat="@drawable/booksmol" />
+
+    <ImageView
+        android:id="@+id/counter"
+        android:layout_width="119dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="245dp"
+        android:layout_marginTop="89dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="149dp"
+        app:layout_constraintBottom_toBottomOf="@+id/shopMap"
+        app:layout_constraintEnd_toEndOf="@+id/shopMap"
+        app:layout_constraintStart_toStartOf="@+id/shopMap"
+        app:layout_constraintTop_toTopOf="@+id/shopMap"
+        app:srcCompat="@drawable/booksmol" />
+
+    <ImageView
+        android:id="@+id/door"
+        android:layout_width="126dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="248dp"
+        android:layout_marginTop="302dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/shopMap"
+        app:layout_constraintEnd_toEndOf="@+id/shopMap"
+        app:layout_constraintStart_toStartOf="@+id/shopMap"
+        app:layout_constraintTop_toTopOf="@+id/shopMap"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/door" />
+
+    <TextView
+        android:id="@+id/labelBookshelves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="189dp"
+        android:layout_marginBottom="293dp"
+        android:text="Bookshelves"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/shopMap"
+        app:layout_constraintEnd_toEndOf="@+id/shopMap"
+        app:layout_constraintStart_toStartOf="@+id/shopMap"
+        app:layout_constraintTop_toTopOf="@+id/shopMap" />
+
+    <TextView
+        android:id="@+id/labelDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="286dp"
+        android:layout_marginBottom="10dp"
+        android:text="Display"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/shopMap"
+        app:layout_constraintEnd_toEndOf="@+id/shopMap"
+        app:layout_constraintStart_toStartOf="@+id/shopMap"
+        app:layout_constraintTop_toTopOf="@+id/shopMap" />
+
+    <TextView
+        android:id="@+id/labelCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="237dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="220dp"
+        android:text="Counter"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/shopMap"
+        app:layout_constraintEnd_toEndOf="@+id/shopMap"
+        app:layout_constraintStart_toStartOf="@+id/shopMap"
+        app:layout_constraintTop_toTopOf="@+id/shopMap" />
+
+    <TextView
+        android:id="@+id/labelDoor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Door"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/door"
+        app:layout_constraintEnd_toEndOf="@+id/door"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/door"
+        app:layout_constraintTop_toTopOf="@+id/door" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
